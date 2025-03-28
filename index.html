@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicador de Nível - API</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoramento do Nível do Rio e Tensão da Bateria</h1>
+
+        <div class="indicators">
+            <div class="indicator">
+                <h2>Nível do Rio</h2>
+                <div class="gauge">
+                    <div class="gauge-fill" id="nivelGauge"></div>
+                </div>
+                <p class="gauge-value" id="nivelText">-- m</p>
+            </div>
+
+            <div class="indicator">
+                <h2>Tensão da Bateria</h2>
+                <div class="gauge">
+                    <div class="gauge-fill" id="tensaoGauge"></div>
+                </div>
+                <p class="gauge-value" id="tensaoText">-- V</p>
+            </div>
+        </div>
+
+        <canvas id="nivelChart"></canvas>
+        <canvas id="tensaoChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
